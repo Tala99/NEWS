@@ -1,9 +1,8 @@
 import joi from "joi";
 
-export const createBlogSchema = 
+export const deleteUserSchema= 
         joi.object({
-            title: joi.string().min(3).max(10).required(),
-            description: joi.string().min(10).required(),
+            id: joi.number().min(1).required(),
 
 
         });
@@ -13,7 +12,7 @@ export const createBlogSchema =
 
 
 
-export const blogDetailsSchema = joi.object({
+export const updateUserSchema = joi.object({
         id: joi.number().min(1).required(),
     
     });

@@ -1,5 +1,5 @@
 import { connectDb } from "../DB/connection.js";
-//import userRouter from './modules/user/user.js';
+import userRouter from './modules/user/user.router.js';
 //import blogRouter from './modules/blog/blog.js';
 //import authRouter from './modules/authentication/authentication.js';
 import cors from 'cors';
@@ -12,7 +12,7 @@ const initApp=(app)=>{
 
         return res.status(200).json({message:"API is running,welcome"});
     });
-    //app.use('/users',userRouter);
+    app.use('/users',userRouter);
     //app.use('/authentication',authRouter);
     //app.use('/blogs',blogRouter);
     app.get('*',(req,res)=>{

@@ -1,5 +1,5 @@
-import newsModel from "../../../DB/model/news.js";
-import UserModel from "../../../DB/model/user.js";
+import newsModel from "../../../DB/models/news.js";
+import UserModel from "../../../DB/models/user.js";
 import { appError } from "../../utils/appError.js";
 
 

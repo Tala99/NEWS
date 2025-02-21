@@ -1,7 +1,7 @@
-import {DataTypes, Sequelize} from 'sequelize';
+import {DataTypes} from 'sequelize';
 import { sequelize } from "../connection.js";
 
-const UserModel= sequelize.define('Users',{
+const UserModel= sequelize.define('users',{
     name:{
         type:DataTypes.STRING,
         allowNull:false,
@@ -33,4 +33,6 @@ const UserModel= sequelize.define('Users',{
     timestamps:false,
 }
 );
+
+
 export default UserModel;

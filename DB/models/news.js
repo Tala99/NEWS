@@ -14,14 +14,9 @@ const newsModel =sequelize.define('news',
         type:DataTypes.TEXT(),
         allowNull:false,
     }
-
-
-
-
-    },
-  
+    }
 );
 UserModel.hasMany(newsModel);
 newsModel.belongsTo(UserModel);
 
-export default blogModel;
+export default newsModel;
